@@ -149,17 +149,11 @@
             label = "LOWER_CUSTOM";
             #binding-cells = <0>;
 
-            bindings = <
-                // On press
-                &macro_press
-                    &mo 1
-                    &kp LA(LEFT_SHIFT)
-
-                // On release
-                &macro_release
-                    &mo 0
-                    &kp LA(LEFT_SHIFT)
-            >;
+            bindings
+                = <&macro_press &mo 1 &kp LA(LEFT_SHIFT)>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo 1 &kp LA(LEFT_SHIFT)>
+                ;
         };
     };
 
