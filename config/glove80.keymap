@@ -39,6 +39,30 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+        
+        hml: homewrow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <55 56 57 72 73 74 75 76 77 78 79 63 32 44 62 32 33 40 41 42 43 44 45 60 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 58 59 60 61 62 63 69 70 71 52 53 54>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        hmr: homewrow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 52 53 54 64 65 66 67 68 69 70 71 55 56 57 72 73 74>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
     };
 
     macros {
@@ -84,6 +108,68 @@
             bindings
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
+        };
+
+        tmux_go_to_1: tmux_go_to_1 {
+            label = "&TMUX_GO_TO_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>
+                , <&kp B>
+                , <&kt LCTRL>
+                , <&kp N1>;
+        };
+    
+        tmux_go_to_2: tmux_go_to_2 {
+            label = "&TMUX_GO_TO_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>
+                , <&kp B>
+                , <&kt LCTRL>
+                , <&kp N2>;
+        };
+    
+        vim_save: vim_save {
+            label = "&VIM_SAVE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LSHFT>
+                , <&kp SEMI>
+                , <&kt LSHFT>
+                , <&kp W>
+                , <&kp RET>;
+        };
+    
+        vim_quit: vim_quit {
+            label = "&VIM_QUIT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LSHFT>
+                , <&kp SEMI>
+                , <&kt LSHFT>
+                , <&kp Q>
+                , <&kp RET>;
+        };
+    
+        tmux_quit: tmux_quit {
+            label = "&TMUX_QUIT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>
+                , <&kp B>
+                , <&kt LCTRL>
+                , <&kp D>;
+        };
+    
+        tmux_switch: tmux_switch {
+            label = "&TMUX_SWITCH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>
+                , <&kp B>
+                , <&kt LCTRL>
+                , <&kp S>;
         };
     };
 
