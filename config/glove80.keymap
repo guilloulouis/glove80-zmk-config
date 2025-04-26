@@ -120,14 +120,14 @@
             label = "&VIM_SAVE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp W &kp RET>;
+            bindings = <&kp LS(SEMICOLON) &kp W &kp RET>;
         };
 
         vim_quit: vim_quit {
             label = "&VIM_QUIT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp Q &kp RET>;
+            bindings = <&kp LS(SEMICOLON) &kp Q &kp RET>;
         };
 
         tmux_quit: tmux_quit {
