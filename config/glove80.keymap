@@ -146,13 +146,20 @@
 
         lower_custom: lower_custom {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&mo 1 &kp LA(LEFT_SHIFT)>,
-                <&macro_release>,
-                <&kp LA(LEFT_SHIFT)>;
-
             label = "LOWER_CUSTOM";
+            #binding-cells = <0>;
+
+            bindings = <
+                // On press
+                &macro_press
+                    &mo 1
+                    &kp LA(LEFT_SHIFT)
+
+                // On release
+                &macro_release
+                    &mo 0
+                    &kp LA(LEFT_SHIFT)
+            >;
         };
     };
 
