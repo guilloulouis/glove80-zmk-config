@@ -188,7 +188,7 @@
             bindings = <
 &kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                 &kp F6  &kp F7     &kp F8    &kp F9         &kp F10
 &kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp BACKSLASH
-&kp TAB     &kp Q     &kp W    &kp F     &kp P      &kp B                                                                               &kp J   &kp L   &kp U      &kp O     &kp SEMICOLON  &kp MINUS
+&kp TAB     &kp Q     &kp W    &kp F     &kp P      &kp B                                                                               &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp MINUS
 &kp ESC     &kp A     &kp R    &kp S     &kp T      &kp G                                                                               &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp EQUAL   &kp Z     &kp X    &kp C     &kp D      &kp V   &alt_shift  &kp INSERT      &layer_td  &kp LEFT_GUI  &kp INSERT  &none      &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp PG_UP
 &magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC    &kp LEFT_SHIFT  &kp LCTRL  &kp DELETE    &kp SPACE   &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &kp PG_DN
